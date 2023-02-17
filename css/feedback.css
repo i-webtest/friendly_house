@@ -1,0 +1,36 @@
+.feedback {
+  margin-bottom: 137px;
+}
+
+.feedback__wrapper {
+  max-width: 780px;
+  padding: 50px 100px;
+  margin: 0 auto;
+  background-color: #F2F0F1;
+  border-radius: 20px;
+}
+
+.feedback__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #FF8A00;
+  margin-bottom: 30px;
+}
+
+.feedback__text {
+  line-height: 30px;
+  text-align: center;
+  color: #282626;
+}
+
+.feedback__text_orange {
+  font-weight: 550;
+  color: #FF8A00;
+  margin-bottom: 20px;
+}
+
+.feedback__text_bottom {
+  margin-bottom: 15px;
+}
