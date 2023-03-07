@@ -51,7 +51,7 @@ body {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  color: #333333
+  color: var(--main-color);
 }
 
 img,
@@ -80,6 +80,7 @@ ul {
 h1,
 h2,
 h3,
+h4,
 p,
 figure,
 fieldset,
@@ -115,8 +116,25 @@ h2 {
 */
 
 .container {
-  max-width: 1240px;
-  padding: 0 30px;
+  max-width: 1440px;
+  padding: 0 130px;
   margin: 0 auto;
 }
 
+@media (max-width: 1320px) {
+  .container {
+    padding: 0 72px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 34px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 0 25px;
+  }
+}
