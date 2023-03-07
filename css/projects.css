@@ -4,6 +4,8 @@
 }
 
 .projects__title {
+  font-family: 'Comfortaa';
+  font-weight: 400;
   font-size: 50px;
   line-height: 60px;
   margin-bottom: 50px;
@@ -36,6 +38,7 @@
 }
 
 .projects__item-title {
+  font-family: 'HelveticaNeueCyr';
   font-weight: 550;
   font-size: 30px;
   line-height: 40px;
@@ -107,6 +110,7 @@
 }
 
 .projects__wrapper-title {
+  font-family: 'HelveticaNeueCyr';
   font-weight: 550;
   font-size: 30px;
   line-height: 40px;
@@ -139,8 +143,8 @@
 
 .projects__more-title {
   font-weight: 550;
-  line-height: 26px;
-  margin-bottom: 22px;
+  line-height: 20px;
+  margin-bottom: 26px;
 }
 
 .projects__more-list {
@@ -180,9 +184,7 @@
     grid-template-columns: 580px 280px;
   }
 
-  .projects__item {
-    /* height: 130px; */
-  }
+  
 
   .projects__img {
     width: 200px;
@@ -402,6 +404,7 @@
   .projects__img {
     width: 130px;
     height: 134px;
+    object-fit: cover;
   }
 
   .projects__item-wrapper {
