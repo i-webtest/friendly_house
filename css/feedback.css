@@ -15,19 +15,19 @@
   font-size: 30px;
   line-height: 40px;
   text-align: center;
-  color: #FF8A00;
+  color: var(--main-color);
   margin-bottom: 30px;
 }
 
 .feedback__text {
   line-height: 30px;
   text-align: center;
-  color: #282626;
+  color: var(--text-color);
 }
 
 .feedback__text_orange {
   font-weight: 550;
-  color: #FF8A00;
+  color: var(--main-color);
   margin-bottom: 20px;
 }
 

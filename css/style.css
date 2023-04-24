@@ -15,7 +15,7 @@ body {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-weight: 550;
   font-size: 20px;
-  color: var(--main-color);
+  color: var(--text-color);
 }
 
 img,
@@ -74,6 +74,21 @@ h2 {
   overflow: hidden;
 }
 
+.title {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+  background-color: transparent;
+  border: none;
+}
+
 /*
 Пример контейнера
 
@@ -92,6 +107,11 @@ h2 {
 @media (max-width: 1320px) {
   .container {
     padding: 0 72px;
+  }
+
+  .button {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 

@@ -2,7 +2,7 @@
   font-style: normal;
   font-weight: 550;
   line-height: 30px;
-  color: #282626;
+  color: var(--text-color);
   text-align: center;
 }
 

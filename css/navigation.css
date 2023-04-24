@@ -1,7 +1,7 @@
 .navigation {
   position: absolute;
   /* display: none; */
-  top: -444px;
+  top: -451px;
   left: 25px;
   width: 394px;
   height: 421px;
@@ -25,7 +25,7 @@
   width: 100%;
   height: 394px;
   background-color: var(--menu-bg);
-  border-bottom: 10px solid var(--link-color);
+  border-bottom: 10px solid var(--main-color);
   padding: 55px 40px 50px 20px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .navigation__item:not(:last-child) {
-  border-bottom: 1px solid var(--link-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .navigation__link {
@@ -45,4 +45,22 @@
 .navigation.active {
   display: block;
   top: 68px;
+}
+
+@media (max-width: 1320px) {
+  .navigation {
+    left: 72px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navigation {
+    left: 34px;
+  }
+}
+
+@media (max-width: 720px) {
+  .navigation {
+    left: 25px;
+  }
 }

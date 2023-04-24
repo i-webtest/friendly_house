@@ -56,7 +56,7 @@
   width: 150px;
   font-weight: 550;
   line-height: 26px;
-  color: var(--link-color);
+  color: var(--main-color);
 }
 
 .projects__item-link::after {
@@ -126,7 +126,7 @@
   width: 152px;
   font-weight: 550;
   line-height: 30px;
-  color: var(--link-color);
+  color: var(--main-color);
 }
 
 .projects__wrapper-link::after {

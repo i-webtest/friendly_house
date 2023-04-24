@@ -13,7 +13,7 @@
   width: 100%;
   font-size: 12px;
   line-height: 14px;
-  color: #282626;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -38,8 +38,8 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #FF8A00;
-  background-color: #282626;
+  color: var(--main-color);
+  background-color: var(--text-color);
   border: none;
   padding: 12px 56px;
   margin: 0 auto;
