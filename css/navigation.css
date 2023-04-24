@@ -1,0 +1,48 @@
+.navigation {
+  position: absolute;
+  /* display: none; */
+  top: -444px;
+  left: 25px;
+  width: 394px;
+  height: 421px;
+  transition: all .3s ease-in-out;
+  padding-top: 27px;
+  z-index: 1;
+}
+
+.navigation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='30' viewBox='0 0 52 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 28.5L1.50001 2.59711L46.3983 28.5H1.5Z' fill='%23F2F0F1' stroke='%23FF8A00' stroke-width='3'/%3E%3C/svg%3E%0A");
+  z-index: -1;
+}
+
+.navigation__list {
+  width: 100%;
+  height: 394px;
+  background-color: var(--menu-bg);
+  border-bottom: 10px solid var(--link-color);
+  padding: 55px 40px 50px 20px;
+}
+
+.navigation__item {
+  padding: 15px 19px;
+}
+
+.navigation__item:not(:last-child) {
+  border-bottom: 1px solid var(--link-color);
+}
+
+.navigation__link {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.navigation.active {
+  display: block;
+  top: 68px;
+}
