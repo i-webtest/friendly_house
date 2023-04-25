@@ -4,11 +4,11 @@
 @import 'style.css';
 @import 'header.css';
 @import 'burger.css';
-@import 'hero.css';
 @import 'navigation.css';
+@import 'hero.css';
+@import 'about.css';
 @import 'projects.css';
 @import 'pets.css';
-@import 'about.css';
 @import 'help.css';
 @import 'feedback.css';
 @import 'contacts.css';

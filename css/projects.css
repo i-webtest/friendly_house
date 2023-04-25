@@ -1,5 +1,5 @@
 .projects {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 50px;
 }
 
@@ -29,7 +29,7 @@
 
 .projects__img {
   width: 280px;
-  height: 180;
+  height: 180px;
   margin-right: 20px;
 }
 
@@ -120,7 +120,7 @@
 .projects__wrapper-link {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -20;
   display: block;
   align-self: flex-end;
   width: 152px;
@@ -171,7 +171,7 @@
 
 @media (max-width: 1320px) {
   .projects {
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 33px;
   }
   .projects__title {
@@ -245,7 +245,7 @@
     width: 135px;
     font-size: 18px;
     line-height: 24px;
-    bottom: -40px;
+    bottom: -33px;
   }
 
   .projects__more-title {
@@ -287,7 +287,7 @@
   }
 
   .projects__list {
-    gap: 3px;
+    gap: 20px;
   }
 
   .projects__item {
@@ -307,13 +307,13 @@
   .projects__item-title {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
   }
 
   .projects__item-description {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .one-hidden {
@@ -334,6 +334,8 @@
 
   .projects__wrapper {
     height: 271px;
+    background-size: contain;
+    background-position-y: 10px;
     padding-bottom: 39px;
   }
 
@@ -347,7 +349,7 @@
     width: 115px;
     font-size: 14px;
     line-height: 20px;
-    bottom: -11px;
+    bottom: -25px;
   }
 
   .projects__more-title {
@@ -359,7 +361,7 @@
   .projects__more-list {
     grid-template: repeat(2, 52px) / repeat(3, 60px);
     gap: 18px 20px;
-    margin-bottom: 27px
+    margin-bottom: 12px
   }
 
   .projects__more-item {
@@ -434,6 +436,7 @@
 
   .projects__wrapper {
     height: 100%;
+    background-position-y: 0;
     padding-bottom: 51px;
   }
 
@@ -444,13 +447,13 @@
   }
 
   .projects__wrapper-link {
-    bottom: -27px;
+    bottom: -33px;
   }
 
   .projects__more-list {
     grid-template: repeat(1, 52px)/repeat(4, 60px);
     gap: 10px;
-    margin-bottom: 10px
+    margin-bottom: 17px
   }
 
   .projects__more-item:nth-child(n+5) {

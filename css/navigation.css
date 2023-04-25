@@ -1,7 +1,7 @@
 .navigation {
   position: absolute;
-  /* display: none; */
-  top: -451px;
+  display: none;
+  top: 69px;
   left: 25px;
   width: 394px;
   height: 421px;
@@ -24,7 +24,7 @@
 .navigation__list {
   width: 100%;
   height: 394px;
-  background-color: var(--menu-bg);
+  background-color: var(--bg);
   border-bottom: 10px solid var(--main-color);
   padding: 55px 40px 50px 20px;
 }
@@ -44,7 +44,7 @@
 
 .navigation.active {
   display: block;
-  top: 68px;
+  /* top: 68px; */
 }
 
 @media (max-width: 1200px) {

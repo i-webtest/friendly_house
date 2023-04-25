@@ -70,6 +70,7 @@
 @media (max-width: 1200px) {
   .hero {
     padding-top: 15px;
+    padding-bottom: 68px;
   }
 
   .hero__container {
@@ -86,6 +87,7 @@
     line-height: 44px;
     padding-top: 69px;
     padding-left: 0;
+    margin-right: 25px;
   }
 
   .hero__title-color {
@@ -111,7 +113,11 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 64px;
+  }
+
   .hero__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -156,6 +162,10 @@
 }
 
 @media (max-width: 668px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+  
   .hero__container {
     display: flex;
     flex-direction: column;
@@ -165,7 +175,7 @@
   .hero__title {
     align-self: flex-start;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 11px;
   }
 
   .hero__title-color {
@@ -189,6 +199,8 @@
 
   .hero__img {
     align-self: center;
-    margin-bottom: 60px;
+    max-width: 270px;
+    height: 266px;
+    margin-bottom: 73px;
   }
 }
