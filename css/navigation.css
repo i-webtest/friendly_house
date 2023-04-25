@@ -47,9 +47,25 @@
   top: 68px;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1200px) {
   .navigation {
     left: 72px;
+    width: 349px;
+    height: 347px;
+  }
+
+  .navigation__list {
+    height: 320px;
+    padding: 40px 20px;
+  }
+
+  .navigation__item {
+    padding: 13px 19px;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -61,6 +77,12 @@
 
 @media (max-width: 720px) {
   .navigation {
-    left: 25px;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .navigation::before {
+    display: none;
   }
 }
