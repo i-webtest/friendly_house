@@ -328,7 +328,60 @@
         </div>
       </section>
 
-      <section class="pets" id="pets">
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__wrapper">
+            <h2 class="feedback__title">Ты можешь помочь нам!</h2>
+
+            <p class="feedback__text text">
+              Хочешь забрать питомца, стать волонтером, или опекуном?
+              <span class="feedback__text_orange">Свяжись с нами!</span>
+            </p>
+            <!-- <p class="feedback__text feedback__text_orange">Свяжись с нами!</p> -->
+
+            <address class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item_phone">
+                  <a class="contacts__link" href="tel:88493003957" aria-label="Ссылка на номер телефона"
+                    >8 (849) 300 - 39 -57</a
+                  >
+                </li>
+
+                <li class="contacts__item contacts__item_mail">
+                  <a
+                    class="contacts__link"
+                    href="mailto:FriendlyHouse@gmail.com"
+                    aria-label="Ссылка на электронную почту"
+                    >FriendlyHouse@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <p class="feedback__text feedback__text_bottom text">
+              Или оставь свои контакты и мы сами свяжемся с тобой!
+            </p>
+
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <fieldset class="form__fieldset">
+                <label class="form__label">
+                  Номер телефона
+                  <input class="form__input" type="tel" inputmode="tel" name="phone" />
+                </label>
+
+                <label class="form__label">
+                  E-mail
+                  <input class="form__input" type="email" inputmode="email" name="mail" />
+                </label>
+              </fieldset>
+
+              <button class="form__button button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="pets" id="pets">
         <div class="container">
           <h2 class="pets__title">Наши питомцы</h2>
 
@@ -376,7 +429,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
   </body>
 </html>
