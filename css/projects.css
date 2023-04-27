@@ -1,6 +1,6 @@
 .projects {
   padding-top: 90px;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
 }
 
 .projects__title {
@@ -38,10 +38,6 @@
 }
 
 .projects__item-title {
-  font-family: 'HelveticaNeueCyr';
-  font-weight: 550;
-  font-size: 30px;
-  line-height: 40px;
   margin-bottom: 15px;
 }
 
@@ -120,7 +116,7 @@
 .projects__wrapper-link {
   position: absolute;
   right: 0;
-  bottom: -20;
+  bottom: -20px;
   display: block;
   align-self: flex-end;
   width: 152px;
@@ -172,7 +168,7 @@
 @media (max-width: 1320px) {
   .projects {
     padding-top: 70px;
-    padding-bottom: 33px;
+    padding-bottom: 70px;
   }
   .projects__title {
     font-size: 44px;
@@ -196,8 +192,6 @@
   }
 
   .projects__item-title {
-    font-size: 24px;
-    line-height: 30px;
     margin-bottom: 7px;
   }
 
@@ -273,7 +267,7 @@
 @media (max-width: 1023px) {
   .projects {
     padding-top: 60px;
-    padding-bottom: 31px;
+    padding-bottom: 62px;
   }
 
   .projects__title {
@@ -305,8 +299,6 @@
   }
 
   .projects__item-title {
-    font-size: 18px;
-    line-height: 24px;
     margin-bottom: 4px;
   }
 
@@ -379,7 +371,7 @@
 @media (max-width: 720px) {
   .projects {
     padding-top: 40px;
-    padding-bottom: 23px;
+    padding-bottom: 43px;
   }
 
   .projects__title {
@@ -414,8 +406,6 @@
   }
 
   .projects__item-title {
-    font-size: 16px;
-    line-height: 22px;
     margin-bottom: 10px;
   }
 

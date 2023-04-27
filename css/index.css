@@ -10,6 +10,12 @@
 @import 'projects.css';
 @import 'pets.css';
 @import 'help.css';
+@import 'swiper.css';
 @import 'feedback.css';
 @import 'contacts.css';
 @import 'form.css';
+
+/* --plugins-- */
+
+@import 'plugins/swiper-bundle.min.css';
+/* @import 'plugins/grid.min.css'; */
