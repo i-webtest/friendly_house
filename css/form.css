@@ -31,8 +31,18 @@
   height: 40px;
   font-size: 16px;
   background-color: #fff;
-  border: none;
+  border: 1px solid transparent;
+  transition: border-color .2s ease-in;
+  outline: 1px solid transparent;
   padding: 5px 15px;
+}
+
+.form__input:hover {
+  border-color: var(--hover-input);
+}
+
+.form__input:focus {
+  border-color: var(--text-color);
 }
 
 .form__button{

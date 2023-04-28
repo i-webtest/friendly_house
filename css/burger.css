@@ -43,6 +43,14 @@
   transition: transform .3s ease-out, background-color .3s ease-in-out;
 }
 
+.burger:hover .burger__line,
+.burger:hover::before,
+.burger:hover::after {
+  background-color: var(--hover-black);
+}
+
+
+
 .burger.active {
   left: 5px;
   width: 22px;
