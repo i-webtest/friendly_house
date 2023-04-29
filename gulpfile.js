@@ -15,7 +15,7 @@ export const html = () => gulp.src('src/*.html').pipe(gulp.dest('dist')).pipe(br
 
 export const style = () => {
   if (prepros) {
-    gulp
+    return gulp
       .src('src/scss/**/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('dist/css'))
