@@ -1,0 +1,82 @@
+.burger {
+  position: relative;
+  top: 3px;
+  width: 40px;
+  height: 21px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid transparent;
+  transition: outline-color .2s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $text-color;
+    border-radius: 1px;
+    transition: transform .3s ease-out, top .3s ease-out, background-color .3s ease-in-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    width: 29px;
+    bottom: 0;
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 3px;
+    transform: translateY(-50%) scale(1);
+    background-color: $text-color;
+    border-radius: 1px;
+    transition: transform .3s ease-out, background-color .3s ease-in-out;
+  }
+
+  &:hover &__line,
+  &:hover::before,
+  &:hover::after {
+    background-color: $hover-black;
+  }
+
+  &.active {
+    left: 5px;
+    width: 22px;
+    height: 22px;
+
+    .burger__line {
+      transform: translateY(-50%) scale(0)
+    }
+
+    &::before {
+      top: 42%;
+      left: -4px;
+      width: 29px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      top: 42%;
+      left: -4px;
+      width: 29px;
+      transform: rotate(45deg);
+    }
+  }
+
+  
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    top: 0;
+  }
+}

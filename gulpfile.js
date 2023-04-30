@@ -37,7 +37,7 @@ export const js = () => gulp.src('src/js/**/*.js').pipe(gulp.dest('dist/js')).pi
 
 export const copy = () =>
   gulp
-    .src(['src/fonts/**/*', 'src/img/**/*'], {
+    .src(['src/fonts/**/*', 'src/img/**/*', 'src/libs/**/*'], {
       base: 'src',
     })
     .pipe(gulp.dest('dist'))
@@ -60,7 +60,7 @@ export const server = () => {
   gulp.watch('./src/**/*.html', html);
   gulp.watch(prepros ? './src/scss/**/*.scss' : './src/css/**/*.css', style);
   gulp.watch('./src/js/**/*.js', js);
-  gulp.watch(['./src/img/**/*', './src/fonts/**/*'], copy);
+  gulp.watch(['./src/img/**/*', './src/fonts/**/*', './src/libs/**/*'], copy);
 };
 
 export const clear = () => del('dist/**/*', { forse: true });

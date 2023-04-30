@@ -12,18 +12,6 @@
   margin-bottom: 31px;
 }
 
-/* .about__wrapper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 580px;
-  height: 330px;
-  background-image: url('../img/about/bg.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
 .about__title {
   margin-bottom: 30px;
 }
