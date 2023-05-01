@@ -44,6 +44,15 @@
     padding-top: 30px;
   }
 
+  &__item {
+    border: 1px solid transparent;
+    transition: border .3s ease-in-out;
+
+    &:hover {
+      border-color: $main-color;
+    }
+  }
+
   &__figure{
     display: flex;
     align-items: center;

@@ -5,3 +5,15 @@
 .swiper2 {
   max-width: 593px;
 }
+
+.swiper3 {
+  max-width: 540px;
+  height: 410px;
+  margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+  .swiper3 {
+    height: 100%;
+  }
+}

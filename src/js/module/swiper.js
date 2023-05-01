@@ -66,3 +66,41 @@ if (width <= 620) {
   swiperOn();
   swiperOn2();
 }
+
+/* --- pets --- */
+
+const petsSlider = document.querySelector('.pets__slider');
+const petsGrid = document.querySelector('.pets__grid');
+const petsSlides = document.querySelectorAll('.pets__item');
+
+const petsSwiper = () => {
+  petsSlider.classList.add('swiper3');
+  petsGrid.classList.add('swiper-wrapper');
+  petsSlides.forEach((slide) => {
+    slide.classList.add('swiper-slide');
+    // slide.style.width = 540 + 'px';
+  });
+
+  new Swiper('.swiper3', {
+    slidesPerView: '1',
+    spacebetween: 20,
+    centeredSlides: true,
+    // freeMode: true,
+    // loop: true,
+    keyboard: {
+      enabled: true,
+    },
+
+    navigation: {
+      nextEl: '.pets-button-next',
+      prevEl: '.pets-button-prev',
+    },
+
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+  });
+};
+
+if (width <= 1023) petsSwiper();
