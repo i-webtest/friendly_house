@@ -19,11 +19,21 @@
     <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet" href="css/index.css" />
-
-    <script defer src="js/index.js" type="module"></script>
-
     <title>Friendly House</title>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const createLink = (url) => {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = url;
+          document.head.append(link);
+        };
+        createLink('css/index.css');
+      });
+    </script>
+
+    <script defer src="js/index.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -52,7 +62,7 @@
           </ul>
         </nav>
 
-        <img class="header__logo" src="img/header/logo.svg" alt="Логотип Friendly House" />
+        <img class="header__logo" src="img/header/logo.svg" alt="Логотип Friendly House" width="355" height="71" />
 
         <a href="tel:88493003957" class="header__link-phone">8 (849) 300 - 39 -57</a>
       </div>
@@ -63,8 +73,6 @@
         <div class="container hero__container">
           <h1 class="visually-hidden">Friendly House - приют для животных</h1>
 
-          <!-- <div class="hero__wrapper"> -->
-          <!-- <div class="hero__description"> -->
           <h2 class="hero__title title">
             <span class="hero__title-color">Сара ждёт,</span>
             когда найдётся её человек
@@ -73,38 +81,82 @@
           <ul class="hero__list">
             <li class="hero__item">
               <figure class="hero__figure">
-                <img class="hero__figure-img" src="img/hero/boris.png" alt="Кот Борис" />
+                <picture class="hero__picture">
+                  <source srcset="img/hero/boris.webp" type="image/webp" />
+                  <source srcset="img/hero/boris.avif" type="image/avif" />
+                  <img
+                    class="hero__figure-img"
+                    src="img/hero/boris.png"
+                    alt="Кот Борис"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <figcaption class="hero__figcaption">Борис</figcaption>
               </figure>
             </li>
 
             <li class="hero__item">
               <figure class="hero__figure">
-                <img class="hero__figure-img" src="img/hero/lui.png" alt="Собака Луи" />
+                <picture class="hero__picture">
+                  <source srcset="img/hero/lui.webp" type="image/webp" />
+                  <source srcset="img/hero/lui.avif" type="image/avif" />
+                  <img
+                    class="hero__figure-img"
+                    src="img/hero/lui.png"
+                    alt="Собака Луи"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <figcaption class="hero__figcaption">Луи</figcaption>
               </figure>
             </li>
 
             <li class="hero__item">
               <figure class="hero__figure">
-                <img class="hero__figure-img" src="img/hero/piter.png" alt="Кролик Питер" />
+                <picture class="hero__picture">
+                  <source srcset="img/hero/piter.webp" type="image/webp" />
+                  <source srcset="img/hero/piter.avif" type="image/avif" />
+                  <img
+                    class="hero__figure-img"
+                    src="img/hero/piter.png"
+                    alt="Кролик Питер"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <figcaption class="hero__figcaption">Питер</figcaption>
               </figure>
             </li>
 
             <li class="hero__item">
               <figure class="hero__figure">
-                <img class="hero__figure-img" src="img/hero/kenny.png" alt="Кот Кенни" />
+                <picture class="hero__picture">
+                  <source srcset="img/hero/kenny.webp" type="image/webp" />
+                  <source srcset="img/hero/kenny.avif" type="image/avif" />
+                  <img
+                    class="hero__figure-img"
+                    src="img/hero/kenny.png"
+                    alt="Кот Кенни"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <figcaption class="hero__figcaption">Кенни</figcaption>
               </figure>
             </li>
           </ul>
 
           <button class="button hero__button">Жми на лапку, чтобы помочь!</button>
-          <!-- </div> -->
-
-          <!-- <img class="hero__img" src="img/hero/banner01.png" alt="Картинка французский бульдог" width="580" /> -->
-          <!-- </div> -->
         </div>
       </section>
 
@@ -126,7 +178,6 @@
             </div>
 
             <div class="about__wrapper-img"></div>
-            <!-- <img class="about__wrapper-img" src="img/about/bg.jpg" alt="" width="580" height="330" /> -->
           </div>
 
           <a class="about__link" href="#">СМИ о нас</a>
@@ -140,7 +191,19 @@
           <div class="projects__grid">
             <ul class="projects__list">
               <li class="projects__item">
-                <img src="img/our-projects/projects-1.jpg" alt="Собачка в будке" class="projects__img" />
+                <picture class="projects__picture">
+                  <source srcset="img/our-projects/projects-1.webp" type="image/webp" />
+                  <source srcset="img/our-projects/projects-1.avif" type="image/avif" />
+                  <img
+                    class="projects__img"
+                    src="img/our-projects/projects-1.jpg"
+                    alt="Собачка в будке"
+                    width="280"
+                    height="180"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="projects__item-wrapper">
                   <h2 class="projects__item-title subtitle">Новый дом для животных</h2>
                   <p class="projects__item-description text">
@@ -152,7 +215,19 @@
               </li>
 
               <li class="projects__item">
-                <img src="img/our-projects/projects-2.jpg" alt="Собачка в костюме" class="projects__img" />
+                <picture class="projects__picture">
+                  <source srcset="img/our-projects/projects-2.webp" type="image/webp" />
+                  <source srcset="img/our-projects/projects-2.avif" type="image/avif" />
+                  <img
+                    src="img/our-projects/projects-2.jpg"
+                    alt="Собачка в костюме"
+                    class="projects__img"
+                    width="280"
+                    height="180"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="projects__item-wrapper">
                   <h2 class="projects__item-title subtitle">Маленькие модники</h2>
                   <p class="projects__item-description text">
@@ -164,7 +239,19 @@
               </li>
 
               <li class="projects__item">
-                <img src="img/our-projects/projects-3.jpg" alt="Девушка с собакой" class="projects__img" />
+                <picture class="projects__picture">
+                  <source srcset="img/our-projects/projects-3.webp" type="image/webp" />
+                  <source srcset="img/our-projects/projects-3.avif" type="image/avif" />
+                  <img
+                    src="img/our-projects/projects-3.jpg"
+                    alt="Девушка с собакой"
+                    class="projects__img"
+                    width="280"
+                    height="180"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="projects__item-wrapper">
                   <h2 class="projects__item-title subtitle">Поиграй со мной!</h2>
                   <p class="projects__item-description text">
@@ -176,7 +263,19 @@
               </li>
 
               <li class="projects__item">
-                <img src="img/our-projects/projects-4.jpg" alt="Собака облизывается" class="projects__img" />
+                <picture class="projects__picture">
+                  <source srcset="img/our-projects/projects-4.webp" type="image/webp" />
+                  <source srcset="img/our-projects/projects-4.avif" type="image/avif" />
+                  <img
+                    src="img/our-projects/projects-4.jpg"
+                    alt="Собака облизывается"
+                    class="projects__img"
+                    width="280"
+                    height="180"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="projects__item-wrapper">
                   <h2 class="projects__item-title subtitle">Конкурс “Лучшее фото”</h2>
                   <p class="projects__item-description text">
@@ -202,73 +301,157 @@
                 <ul class="projects__more-list">
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/1.jpg" alt="Собака" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/1.jpg"
+                        alt="Собака"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/2.jpg" alt="Собака" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/2.jpg"
+                        alt="Собака"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/3.jpg" alt="Кролик" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/3.jpg"
+                        alt="Кролик"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/4.jpg" alt="Собака" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/4.jpg"
+                        alt="Собака"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/5.jpg" alt="Собака" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/5.jpg"
+                        alt="Собака"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/6.jpg" alt="Попугай" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/6.jpg"
+                        alt="Попугай"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/7.jpg" alt="Девочка с собакой" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/7.jpg"
+                        alt="Девочка с собакой"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/8.jpg" alt="Попугай" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/8.jpg"
+                        alt="Попугай"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/9.jpg" alt="Попугайчики" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/9.jpg"
+                        alt="Попугайчики"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/10.jpg" alt="Собака" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/10.jpg"
+                        alt="Собака"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/11.jpg" alt="Девушка с собакой" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/11.jpg"
+                        alt="Девушка с собакой"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
 
                   <li class="projects__more-item">
                     <a href="#" class="projects__more-item__link">
-                      <img src="img/our-projects/12.jpg" alt="Кролик" class="projects__more-item__img" />
+                      <img
+                        src="img/our-projects/12.jpg"
+                        alt="Кролик"
+                        class="projects__more-item__img"
+                        width="80"
+                        height="70"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
                 </ul>
@@ -311,7 +494,24 @@
               <h3 class="help__subtitle subtitle help__subtitle_two">Стать волонером</h3>
 
               <div class="help__content">
-                <img class="help__content-image" src="img/help/img201.jpg" alt="Девушка с собакой" />
+                <picture class="help__picture">
+                  <source srcset="img/help/img-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                  <source srcset="img/help/img-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                  <source srcset="img/help/img-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                  <source srcset="img/help/img-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                  <source srcset="img/help/img-mobile.webp" media="(max-width: 720px)" type="image/webp" />
+                  <source srcset="img/help/img-mobile.avif" media="(max-width: 720px)" type="image/avif" />
+                  <source srcset="img/help/img-desktop.webp" type="image/webp" />
+                  <source srcset="img/help/img-desktop.avif" type="image/avif" />
+                  <img
+                    class="help__content-image"
+                    src="img/help/img-desktop.jpg"
+                    alt="Девушка с собакой"
+                    width="580"
+                    height="349"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <div class="help__item-wrapper">
                   <p class="help__text help__text_two text">
@@ -368,42 +568,137 @@
               <ul class="pets__grid">
                 <li class="pets__item">
                   <figure class="pets__figure">
-                    <img class="pets__img" src="img/pets/image01.jpg" alt="Твинки и Пинки" />
+                    <picture class="pets__picture">
+                      <source srcset="img/pets/cavy-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                      <source srcset="img/pets/cavy-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                      <source srcset="img/pets/cavy-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                      <source srcset="img/pets/cavy-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                      <source srcset="img/pets/cavy.webp" type="image/webp" />
+                      <source srcset="img/pets/cavy.avif" type="image/avif" />
+                      <img
+                        class="pets__img"
+                        src="img/pets/cavy.jpg"
+                        alt="Твинки и Пинки"
+                        width="480"
+                        height="280"
+                        loading="lazy"
+                      />
+                    </picture>
                     <figcaption class="pets__figcaption">Твинки и Пинки, 2 месяца</figcaption>
                   </figure>
                 </li>
 
                 <li class="pets__item">
                   <figure class="pets__figure">
-                    <img class="pets__img" src="img/pets/image02.jpg" alt="Мурзик" />
+                    <picture class="pets__picture">
+                      <source srcset="img/pets/cat-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                      <source srcset="img/pets/cat-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                      <source srcset="img/pets/cat-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                      <source srcset="img/pets/cat-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                      <source srcset="img/pets/cat.webp" type="image/webp" />
+                      <source srcset="img/pets/cat.avif" type="image/avif" />
+                      <img
+                        class="pets__img"
+                        src="img/pets/cat.jpg"
+                        alt="Мурзик"
+                        width="280"
+                        height="280"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <figcaption class="pets__figcaption">Мурзик, 6 месяцев</figcaption>
                   </figure>
                 </li>
 
                 <li class="pets__item">
                   <figure class="pets__figure">
-                    <img class="pets__img" src="img/pets/image03.jpg" alt="Миша (кот) и Ричард (пёс)" />
+                    <picture class="pets__picture">
+                      <source srcset="img/pets/catdog-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                      <source srcset="img/pets/catdog-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                      <source srcset="img/pets/catdog-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                      <source srcset="img/pets/catdog-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                      <source srcset="img/pets/catdog.webp" type="image/webp" />
+                      <source srcset="img/pets/catdog.avif" type="image/avif" />
+                      <img
+                        class="pets__img"
+                        src="img/pets/catdog.jpg"
+                        alt="Миша (кот) и Ричард (пёс)"
+                        width="380"
+                        height="650"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <figcaption class="pets__figcaption">Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
                   </figure>
                 </li>
 
                 <li class="pets__item">
                   <figure class="pets__figure">
-                    <img class="pets__img" src="img/pets/image04.jpg" alt="Джек" />
+                    <picture class="pets__picture">
+                      <source srcset="img/pets/dog-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                      <source srcset="img/pets/dog-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                      <source srcset="img/pets/dog-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                      <source srcset="img/pets/dog-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                      <source srcset="img/pets/dog.webp" type="image/webp" />
+                      <source srcset="img/pets/dog.avif" type="image/avif" />
+                      <img
+                        class="pets__img"
+                        src="img/pets/dog.jpg"
+                        alt="Джек"
+                        width="280"
+                        height="280"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <figcaption class="pets__figcaption">Джек, 1 год</figcaption>
                   </figure>
                 </li>
 
                 <li class="pets__item">
                   <figure class="pets__figure">
-                    <img class="pets__img" src="img/pets/image05.jpg" alt="Джерри" />
+                    <picture class="pets__picture">
+                      <source srcset="img/pets/hamster-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                      <source srcset="img/pets/hamster-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                      <source srcset="img/pets/hamster-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                      <source srcset="img/pets/hamster-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                      <source srcset="img/pets/hamster.webp" type="image/webp" />
+                      <source srcset="img/pets/hamster.avif" type="image/avif" />
+                      <img
+                        class="pets__img"
+                        src="img/pets/hamster.jpg"
+                        alt="Джерри"
+                        width="280"
+                        height="280"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <figcaption class="pets__figcaption">Джерри, 3 недели</figcaption>
                   </figure>
                 </li>
 
                 <li class="pets__item">
                   <figure class="pets__figure">
-                    <img class="pets__img" src="img/pets/image06.jpg" alt="Рокки и Сеня" />
+                    <picture class="pets__picture">
+                      <source srcset="img/pets/parrot-laptop.webp" media="(max-width: 1320px)" type="image/webp" />
+                      <source srcset="img/pets/parrot-laptop.avif" media="(max-width: 1320px)" type="image/avif" />
+                      <source srcset="img/pets/parrot-tablet.webp" media="(max-width: 1023px)" type="image/webp" />
+                      <source srcset="img/pets/parrot-tablet.avif" media="(max-width: 1023px)" type="image/avif" />
+                      <source srcset="img/pets/parrot.webp" type="image/webp" />
+                      <source srcset="img/pets/parrot.avif" type="image/avif" />
+                      <img
+                        class="pets__img"
+                        src="img/pets/parrot.jpg"
+                        alt="Рокки и Сеня"
+                        width="180"
+                        height="280"
+                        loading="lazy"
+                      />
+                    </picture>
+
                     <figcaption class="pets__figcaption">Рокки и Сеня, 2 и 3 года</figcaption>
                   </figure>
                 </li>
@@ -423,7 +718,7 @@
 
             <p class="feedback__text text">
               Хочешь забрать питомца, стать волонтером, или опекуном?
-              <span class="feedback__text_orange">Свяжись с нами!</span>
+              <span class="feedback__text-orange">Свяжись с нами!</span>
             </p>
             <!-- <p class="feedback__text feedback__text_orange">Свяжись с нами!</p> -->
 

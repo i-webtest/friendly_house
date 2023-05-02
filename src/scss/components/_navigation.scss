@@ -32,7 +32,7 @@
     padding: 15px 19px;
 
     &:not(:last-child) {
-      border-bottom: 1px solid var(--main-color);
+      border-bottom: 1px solid $main-color;
     }
   }
 
@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
   .navigation {
     left: 72px;
     width: 349px;

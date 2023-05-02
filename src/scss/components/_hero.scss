@@ -10,6 +10,16 @@
     gap: 20px;
     min-height: 580px;
     background-image: url('../img/hero/banner01.png');
+    background-image: -webkit-image-set(
+      url('../img/hero/banner01.avif') 1x,
+      url('../img/hero/banner01.webp') 1x,
+      url('../img/hero/banner01.png') 1x
+    );
+    background-image: image-set(
+      url('../img/hero/banner01.avif') 1x,
+      url('../img/hero/banner01.webp') 1x,
+      url('../img/hero/banner01.png') 1x
+    );
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -57,6 +67,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
+  }
+
+  &__picture {
+    width: 80px;
+    height: 80px;
   }
 
   &__figcaption {
@@ -145,6 +160,16 @@
       grid-template-rows: auto auto;
       min-height: 490px;
       background-image: url('../img/hero/banner768.png');
+      background-image: -webkit-image-set(
+        url('../img/hero/banner768.avif') 1x,
+        url('../img/hero/banner768.webp') 1x,
+        url('../img/hero/banner768.png') 1x
+      );
+      background-image: image-set(
+        url('../img/hero/banner768.avif') 1x,
+        url('../img/hero/banner768.webp') 1x,
+        url('../img/hero/banner768.png') 1x
+      );
       background-position: center bottom;
     }
 
@@ -171,9 +196,14 @@
 
     &__figure {
       &-img {
-        width: 60px;
-        height: 60px;
+        // width: 60px;
+        // height: 60px;
       }
+    }
+
+    &__picture {
+      width: 60px;
+      height: 60px;
     }
 
     &__figcaption {
@@ -214,6 +244,16 @@
       gap: 10px;
       min-height: 536px;
       background-image: url('../img/hero/banner320.png');
+      background-image: -webkit-image-set(
+        url('../img/hero/banner320.avif') 1x,
+        url('../img/hero/banner320.webp') 1x,
+        url('../img/hero/banner320.png') 1x
+      );
+      background-image: image-set(
+        url('../img/hero/banner320.avif') 1x,
+        url('../img/hero/banner320.webp') 1x,
+        url('../img/hero/banner320.png') 1x
+      );
       background-size: 270px;
       background-position: center 78px;
     }
@@ -234,6 +274,7 @@
       grid-row: 3;
       flex-direction: row;
       justify-content: space-between;
+      gap: 0;
       width: 100%;
     }
 

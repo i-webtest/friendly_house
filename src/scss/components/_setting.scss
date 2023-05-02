@@ -60,6 +60,11 @@ iframe {
   border: none;
 }
 
+picture {
+  height: fit-content;
+  line-height: 0;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -135,6 +140,8 @@ iframe {
 .container {
   max-width: 1230px;
   padding: 0 25px;
+  // max-width: 1440px;
+  // margin: 0 130px;
   margin: 0 auto;
 }
 

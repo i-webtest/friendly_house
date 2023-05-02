@@ -24,6 +24,7 @@
 
   &__item {
     display: flex;
+    gap: 20px;
     border: 1px solid transparent;
     transition: border-color .2s ease-in-out;
 
@@ -66,10 +67,13 @@
     }
   }
 
+  &__picture {
+    line-height: 0;
+  }
+
   &__img {
-    width: 280px;
+    max-width: 280px;
     height: 180px;
-    margin-right: 20px;
   }
 
   &__right {
@@ -303,6 +307,7 @@
     }
   
     &__item {
+      gap: 10px;
       height: 104px;
       
       &-wrapper {
@@ -329,7 +334,6 @@
     &__img {
       width: 160px;
       height: 104px;
-      margin-right: 10px;
     }
 
     &__right {

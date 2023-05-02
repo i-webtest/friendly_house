@@ -25,7 +25,7 @@
     color: $text-color;
     margin-bottom: 18px;
 
-    &_orange {
+    &-orange {
       font-weight: 550;
       color: $main-color;
     }
@@ -89,7 +89,7 @@
   }
 }
 
-@media(max-width: 620px) {
+@media(max-width: 720px) {
   .feedback {
     padding-top: 20px;
 

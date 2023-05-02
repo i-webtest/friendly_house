@@ -56,8 +56,9 @@
     }
   }
 
-  &__img {
-    margin-bottom: 13px;
+  &__picture {
+    display: block;
+    margin-bottom: 20px;
   }
 
   &__figcaption {
@@ -159,9 +160,8 @@
       }
     }
 
-    &__img {
-      width: 100%;
-      margin-bottom: 4px;
+    &__picture {
+      margin-bottom: 10px;
     }
 
     &__figcaption {
@@ -256,8 +256,8 @@
       margin: 0 auto;
     }
 
-    &__img {
-      margin-bottom: 12px;
+    &__picture {
+      margin-bottom: 18px;
     }
 
     &-button {
@@ -338,8 +338,8 @@
       }
     }
 
-    &__img {
-      margin-bottom: 2px;
+    &__picture {
+      margin-bottom: 9px;
     }
 
     &__figcaption {
