@@ -79,12 +79,31 @@
           <h1 class="visually-hidden">Friendly House - приют для животных</h1>
 
           <h2 class="hero__title title">
-            <span class="hero__title-color">Сара ждёт,</span>
-            когда найдётся её человек
+            <span class="hero__title-color"><span class="hero__title-name">Сара</span> ждёт,</span>
+            <span class="hero__title-text">когда найдётся её человек</span>
           </h2>
 
           <ul class="hero__list">
-            <li class="hero__item">
+            <li class="hero__item hero__item-active" data-bg="img/hero/sara-bg.png" tabindex="0">
+              <figure class="hero__figure">
+                <picture class="hero__picture">
+                  <source srcset="img/hero/sara.webp" type="image/webp" />
+                  <source srcset="img/hero/sara.avif" type="image/avif" />
+                  <img
+                    class="hero__figure-img"
+                    src="img/hero/sara.png"
+                    alt="Кот Борис"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <figcaption class="hero__figcaption">Сара</figcaption>
+              </figure>
+            </li>
+
+            <li class="hero__item" data-bg="img/hero/boris-bg.png" aria-label="Борис" tabindex="0">
               <figure class="hero__figure">
                 <picture class="hero__picture">
                   <source srcset="img/hero/boris.webp" type="image/webp" />
@@ -103,7 +122,7 @@
               </figure>
             </li>
 
-            <li class="hero__item">
+            <li class="hero__item" data-bg="img/hero/lui-bg.png" tabindex="0">
               <figure class="hero__figure">
                 <picture class="hero__picture">
                   <source srcset="img/hero/lui.webp" type="image/webp" />
@@ -122,7 +141,7 @@
               </figure>
             </li>
 
-            <li class="hero__item">
+            <li class="hero__item" data-bg="img/hero/piter-bg.png" tabindex="0">
               <figure class="hero__figure">
                 <picture class="hero__picture">
                   <source srcset="img/hero/piter.webp" type="image/webp" />
@@ -141,7 +160,7 @@
               </figure>
             </li>
 
-            <li class="hero__item">
+            <li class="hero__item" data-bg="img/hero/kenny-bg.png" tabindex="0">
               <figure class="hero__figure">
                 <picture class="hero__picture">
                   <source srcset="img/hero/kenny.webp" type="image/webp" />
