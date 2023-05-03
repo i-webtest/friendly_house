@@ -33,6 +33,8 @@
       });
     </script>
 
+    <!-- <script defer src="libs/jquery-3.6.4.min.js"></script> -->
+
     <script defer src="js/index.min.js"></script>
   </head>
   <body>
@@ -59,12 +61,15 @@
             <li class="navigation__item">
               <a href="#" class="navigation__link">Контакты</a>
             </li>
+            <li class="navigation__item">
+              <a href="tel:88493003957" class="header__link-phone navigation__link">8 (849) 300 - 39 -57</a>
+            </li>
           </ul>
         </nav>
 
         <img class="header__logo" src="img/header/logo.svg" alt="Логотип Friendly House" width="355" height="71" />
 
-        <a href="tel:88493003957" class="header__link-phone">8 (849) 300 - 39 -57</a>
+        <a class="header__link-phone header__link-phone_hidden" href="tel:88493003957">8 (849) 300 - 39 -57</a>
       </div>
     </header>
 
@@ -156,7 +161,7 @@
             </li>
           </ul>
 
-          <button class="button hero__button">Жми на лапку, чтобы помочь!</button>
+          <button class="button hero__button order">Жми на лапку, чтобы помочь!</button>
         </div>
       </section>
 
@@ -555,7 +560,7 @@
             </li>
           </ol>
           <!-- </div> -->
-          <button class="button help__button">Жми на лапку, чтобы помочь!</button>
+          <button class="button help__button order">Жми на лапку, чтобы помочь!</button>
         </div>
       </section>
 
@@ -745,16 +750,16 @@
               Или оставь свои контакты и мы сами свяжемся с тобой!
             </p>
 
-            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <form class="form" method="POST">
               <fieldset class="form__fieldset">
                 <label class="form__label">
                   Номер телефона
-                  <input class="form__input" type="tel" inputmode="tel" name="phone" />
+                  <input class="form__input form__input-phone" type="tel" inputmode="tel" name="phone" />
                 </label>
 
                 <label class="form__label">
                   E-mail
-                  <input class="form__input" type="email" inputmode="email" name="mail" />
+                  <input class="form__input form__input-mail" type="email" inputmode="email" name="mail" />
                 </label>
               </fieldset>
 
@@ -764,5 +769,73 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__main">
+        <button class="modal__close">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect
+              width="29.1681"
+              height="1.94454"
+              rx="0.972271"
+              transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 20.625)"
+              fill="#282626"
+            />
+            <rect
+              width="29.1681"
+              height="1.94454"
+              rx="0.972271"
+              transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.375 0)"
+              fill="#282626"
+            />
+          </svg>
+        </button>
+        <h2 class="modal__title">Ты можешь помочь нам!</h2>
+
+        <p class="modal__text text">
+          Хочешь забрать питомца, стать волонтером, или опекуном?
+          <span class="modal__text-orange">Свяжись с нами!</span>
+        </p>
+        <!-- <p class="feedback__text feedback__text_orange">Свяжись с нами!</p> -->
+
+        <address class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item_phone">
+              <a class="contacts__link" href="tel:88493003957" aria-label="Ссылка на номер телефона"
+                >8 (849) 300 - 39 -57</a
+              >
+            </li>
+
+            <li class="contacts__item contacts__item_mail">
+              <a class="contacts__link" href="mailto:FriendlyHouse@gmail.com" aria-label="Ссылка на электронную почту"
+                >FriendlyHouse@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <p class="modal__text modal__text_bottom text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
+
+        <form class="form form-modal" method="POST">
+          <fieldset class="form__fieldset form__fieldset-modal">
+            <label class="form__label">
+              Номер телефона
+              <input class="form__input form__input-phone__modal" type="tel" inputmode="tel" name="phone" />
+            </label>
+
+            <label class="form__label">
+              E-mail
+              <input class="form__input form__input-mail__modal" type="email" inputmode="email" name="mail" />
+            </label>
+          </fieldset>
+
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

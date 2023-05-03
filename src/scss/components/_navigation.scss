@@ -34,6 +34,14 @@
     &:not(:last-child) {
       border-bottom: 1px solid $main-color;
     }
+
+    &:nth-child(5) {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      display: none;
+    }
   }
 
   &__link {
@@ -70,18 +78,55 @@
 
 @media (max-width: 1023px) {
   .navigation {
+    height: 415px;
     left: 34px;
+
+    &__list {
+      height: 388px;
+      padding: 40px 20px 44px;
+    }
+
+    &__item {
+      
+      &:last-child {
+        display: block;
+      }
+    }
   }
 }
 
 @media (max-width: 720px) {
   .navigation {
     left: 0;
+    top: 47px;
     width: 100%;
+    height: 326px;
     padding-top: 0;
 
     &::before {
       display: none;
+    }
+
+    &__list {
+      height: 100%;
+      padding: 5px 25px 25px;
+    }
+
+    &__item {
+      padding: 15px 10px;
+
+      &:nth-child(5) {
+        padding-bottom: 9px;
+      }
+
+      &:nth-child(6) {
+        padding-top: 9px;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

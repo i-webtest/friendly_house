@@ -1,0 +1,150 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.67);;
+  padding: 20px;
+  overflow-y: auto;
+  cursor: pointer;
+  z-index: 10;
+  // padding-top: 66px;
+  // padding-bottom: 90px;
+
+  &__main {
+    position: relative;
+    max-width: 780px;
+    padding: 50px 100px;
+    margin: 0 auto;
+    background-color: $bg;
+    border-radius: 20px;
+    cursor: default;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 22px;
+    height: 22px;
+    line-height: 0;
+    border: none;
+  }
+
+  &__title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 18px;
+
+    &-orange {
+      font-weight: 550;
+      color: $main-color;
+    }
+
+    &_bottom {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .modal {
+    padding-top: 20px;
+
+    &__main {
+      max-width: 680px;
+      padding: 50px 93px;
+    }
+
+    &__close {
+      top: 22px;
+      right: 26px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 19px;
+    }
+
+    &__text {
+      max-width: 390px;
+      margin: 0 auto 18px;
+
+      &_bottom {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-width: 1023px) {
+  .modal {
+    padding-top: 10px;
+
+    &__main {
+      border-radius: 18px;
+      padding: 40px 60px;
+      max-width: 540px;
+    }
+
+    &__close {
+      top: 17px;
+      right: 21px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      max-width: 300px;
+
+      &_bottom {
+        max-width: 100%;
+        margin-bottom: 26px;
+      }
+    }
+  }
+}
+
+@media(max-width: 720px) {
+  .modal {
+    padding-top: 20px;
+
+    &__main {
+      border-radius: 12px;
+      padding: 30px 29px;
+    }
+
+    &__close {
+      width: 8px;
+      height: 11px;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      margin: 0 auto 11px;
+
+      &_bottom {
+        margin: 0 auto 13px;
+      }
+    }
+  }
+}

@@ -22,10 +22,11 @@ let dev = false;
 const sass = gulpSass(sassPkg);
 
 const allJS = [
-  // 'src/libs/jquery-3.6.4.min.js',
+  'src/libs/jquery-3.6.4.min.js',
+  'src/libs/axios.min.js',
+  'src/libs/inputmask.min.js',
+  'src/libs/just-validate.production.min.js',
   'src/libs/swiper-bundle.min.js',
-  // 'src/js/module/burgerMenu.js',
-  // 'src/js/module/swiper.js',
 ];
 
 //задачи

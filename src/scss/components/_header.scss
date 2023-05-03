@@ -73,7 +73,17 @@
     }
 
     &__link-phone {
-      display: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &::before {
+        position: inherit;
+      }
+
+      &_hidden {
+        display: none;
+      }
     }
   }
 }
