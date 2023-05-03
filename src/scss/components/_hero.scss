@@ -61,10 +61,15 @@
 
   &__item {
     border: 1px solid transparent;
-    transition: border .3s ease-in-out;
+    outline: 1px solid transparent;
+    transition: border .3s ease-in-out, outline .3s ease-in-out;
 
     &:hover {
       border-color: $main-color;
+    }
+
+    &:focus {
+      outline: 1px solid $main-color;
     }
 
     &-active {
