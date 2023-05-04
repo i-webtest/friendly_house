@@ -62,6 +62,7 @@
     border: 1px solid transparent;
     outline: 1px solid transparent;
     transition: border .3s ease-in-out, outline .3s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       border-color: $main-color;
@@ -69,6 +70,14 @@
 
     &:focus {
       outline: 1px solid $main-color;
+
+      & .hero__figcaption {
+        color: $main-color;
+      }
+    }
+
+    &:active .hero__figcaption {
+      color: $main-color;
     }
 
     &-active {
