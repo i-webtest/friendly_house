@@ -42,3 +42,12 @@
   src: local('HelveticaNeueCyr'), url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
     url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), url('../fonts/ArialMT.woff2') format('woff2'),
+    url('../fonts/ArialMT.woff') format('woff');
+}

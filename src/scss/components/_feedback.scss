@@ -1,6 +1,6 @@
 .feedback {
   padding-top: 66px;
-  padding-bottom: 90px;
+  padding-bottom: 140px;
 
   &__wrapper {
     max-width: 780px;
@@ -39,6 +39,7 @@
 @media (max-width: 1320px) {
   .feedback {
     padding-top: 20px;
+    padding-bottom: 120px;
 
     &__wrapper {
       max-width: 680px;
@@ -65,6 +66,7 @@
 @media(max-width: 1023px) {
   .feedback {
     padding-top: 10px;
+    padding-bottom: 100px;
 
     &__wrapper {
       border-radius: 18px;
@@ -92,6 +94,7 @@
 @media(max-width: 720px) {
   .feedback {
     padding-top: 20px;
+    padding-bottom: 70px;
 
     &__wrapper {
       border-radius: 12px;
