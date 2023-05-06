@@ -8,11 +8,13 @@
 
   &__wrapper {
     position: relative;
+    // max-height: 722px;
+    // height: 100%;
   }
 
   &__grid {
     display: grid;
-    grid-template: 322px 326px / repeat(12, 1fr);
+    grid-template: 322px 352px / repeat(12, 1fr);
     gap: 48px 20px;
   }
 
@@ -23,6 +25,7 @@
 
       & .pets__img {
         height: 280px;
+        object-fit: cover;
       }
     }
   
@@ -102,6 +105,7 @@
 @media (max-width: 1320px) {
   .pets {
     padding-top: 75px;
+    padding-bottom: 36px;
 
     &__title {
       font-size: 44px;
@@ -110,7 +114,7 @@
     }
   
     &__grid {
-      grid-template: 235px 338px / repeat(9, 1fr);
+      grid-template: 235px 352px / repeat(9, 1fr);
       gap: 62px 20px;
     }
 
@@ -174,6 +178,7 @@
 @media (max-width: 1023px) {
   .pets {
     padding-top: 61px;
+    padding-bottom: 50px;
 
     &__title {
       font-size: 30px;
